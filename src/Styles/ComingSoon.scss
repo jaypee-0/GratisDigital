@@ -1,0 +1,79 @@
+$background: linear-gradient(178deg, #210045, #0C0123);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+$gray: gray;
+
+.background {    
+    background-image: $background;
+}
+#comingsoon {
+    text-align: center;
+    height: 100vh;
+    color: white;
+    font-family: 'Roboto', sans-serif!important;
+    .deets1 {
+        input{
+            border: none;
+            color: $gray;
+            border-bottom: 1px solid #47048e;
+            background-color: transparent;
+            outline: none;
+        }
+    }
+    .cardex {
+        z-index: 100;
+    }
+    .p-text {
+        z-index: 101;
+    }
+    .numbers {
+        font-size: 32px;
+        color: black;
+        font-weight: 900;
+    }
+    .waiting {
+        background-color: #271AC1;
+        color: white;
+        right: 0;
+    }
+    .w-60 {
+        width: 50%;
+    }
+    .blue-circle {
+        position: absolute;
+        border-radius: 50%;
+        background-image: linear-gradient(177deg, #213F72, #19073B);
+        right: 0;
+        width: 104px;
+        height: 107px;
+        z-index: 99;
+        top: 30%;
+    }
+    .magenta-circle {
+        position: absolute;
+        border-radius: 50%;
+        background-image: linear-gradient(177deg, #7F1E7B, #19073B);
+        left: 0;
+        width: 140px;
+        height: 143px;
+        z-index: 98;
+        top: 15%;
+    }
+} 
+@media screen and (max-width: 768px) {
+    #comingsoon {   
+        .magenta-circle, .blue-circle {
+            display: none;
+        }     
+        .deets2{
+            font-size: 14px;
+        }        
+        .numbers {
+            font-size: 22px;
+        }
+        .period {
+            font-size: 14px;
+        }.w-60 {
+            width: 60%;
+        }
+    }
+}

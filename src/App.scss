@@ -1,0 +1,65 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+$gray: gray;
+body {
+    background-color: rgb(247, 247, 248);
+    font-family: 'Koulen', cursive;
+    font-weight: 400;
+    font-size: 16px;
+}
+.contact-card {
+    background-image: linear-gradient(180deg, #210045, #0C0123);
+    .contactP {
+        color: #FF00F7;
+    }
+}
+
+#github {
+    background-color: rgb(247, 247, 248);
+    font-family: 'Koulen', cursive;
+    font-weight: 400;
+    font-size: 16px;
+    .stars,
+    .issues {
+        border: 1px solid black;
+    }
+}
+
+// Blog
+#blog {
+    form {
+        input {
+            border: 1px solid black;
+            width: 75%;
+        }
+    }
+    .carding {
+        transition: transform 100ms ease-in;
+        cursor: pointer;
+        box-shadow: 1px 5px 5px rgb(224, 219, 219);
+        &:hover{
+            transform: scale(1.02);
+        }
+    }
+    @media screen and (max-width: 768px) {
+        input {
+            width: 100%;
+        }
+    }
+}
+
+// Footer
+footer {
+    color: $gray;
+    .fa-youtube, 
+    .fa-facebook-square,
+    .fa-linkedin,
+    .fa-instagram-square,
+    .fa-twitter-square {
+        &:hover {
+            color: rgb(209, 203, 203);
+        }
+    }
+}
