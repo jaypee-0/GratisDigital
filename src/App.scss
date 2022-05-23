@@ -1,7 +1,9 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+.loadmore {
+    background-color: #7C0FD5;
+}
 $gray: gray;
 body {
     background-color: rgb(247, 247, 248);
@@ -10,12 +12,20 @@ body {
     font-size: 16px;
 }
 .contact-card {
-    background-image: linear-gradient(180deg, #210045, #0C0123);
+    background-image: linear-gradient(180deg, #210045, #0C0123);    
     .contactP {
         color: #FF00F7;
     }
 }
-
+.heading-card {
+    background-image: linear-gradient(180deg, #210045, #0C0123);
+    .contactP {
+        color: #FF00F7;
+    }
+    .ptt {        
+        padding-top: 6rem!important;
+    }
+}
 #github {
     background-color: rgb(247, 247, 248);
     font-family: 'Koulen', cursive;

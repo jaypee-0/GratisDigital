@@ -2,14 +2,18 @@ import React from 'react'
 import { FontAwesomeIcon as FA } from '@fortawesome/react-fontawesome';
 import blogs from '../Data/blogs.json';
 import articles from '../Data/article.json';
+import Header from '../Layouts/Header/Header';
+import Footer from '../Layouts/Footer/Footer';
 
 const Blog = () => {
 
   return (
+    <div>
+    <Header />
     <div id='blog'>
         {/* Heading Card */}
-        <div className="heading-card w-100 bg-dark py-4 mb-5">
-            <div className="container py-5 px-5 text-light">
+        <div className="heading-card w-100 pb-4 mb-5">
+            <div className="container pb-5 ptt px-5 text-light">
                 <div className="d-flex">
                 <hr className='align-self-center my-0' style={{ width: 40, marginRight: '0.75rem'}}/>
                 <p className='my-0'>BLOG</p>
@@ -74,7 +78,7 @@ const Blog = () => {
                 )})}
             </div>
             <div className='d-flex justify-content-center my-5'>
-                <button className="text-center rounded-pill px-3 py-2">LOAD MORE</button>
+                <button className="loadmore border-0 text-center text-light rounded-pill px-4 py-2">LOAD MORE</button>
             </div>
             
             </div>       
@@ -84,9 +88,11 @@ const Blog = () => {
             <div className="container py-5 px-5 text-light">
                 <h5>What to Know About More Metrics?</h5>
                 <p>Learn who we are and what drives us.</p>
-                <button>Contact Us<FA className='ms-2' icon="fa-solid fa-arrow-right-long" /></button>
+                <p className='contactP'>Contact Us<FA className='ms-2' icon="fa-solid fa-arrow-right-long" /></p>
             </div>
         </div>
+    </div>
+    <Footer />
     </div>
   )
 }
