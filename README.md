@@ -17,7 +17,7 @@ Using the github api, display the following via '/github route':
 
 ## How to Run
 `npm install`
-Installs dev dependencies
+- Installs dev dependencies
 
 `npm start`
 - Runs the app in the development mode.
