@@ -1,14 +1,18 @@
-  import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon as FA } from '@fortawesome/react-fontawesome';
 import '../../Styles/Header.scss';
+import Contact from '../../Routes/Contact';
 
 const Header = () => {
   const [click, setClick] = useState(false);
   const [switchnav, setswitchnav] = useState(false);
+  const [showcontact, setshowcontact] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+  const handleContact = () => setshowcontact(true);
+  const closeContact = () => setshowcontact(!showcontact);
 
   const switchNav = () => {
     if (window.scrollY >= 100) {
@@ -36,7 +40,10 @@ const Header = () => {
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
               <li className='nav-item'>
-                <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
+                <Link
+                  to='/about'
+                  className='nav-links'
+                  onClick={closeMobileMenu}>
                   ABOUT US
                 </Link>
               </li>
@@ -56,14 +63,16 @@ const Header = () => {
                   Github
                 </Link>
               </li>
-              <button className='rounded-pill align-self-center'>
-                <Link
-                  to='/contact'
-                  className='nav-links'
-                  onClick={closeMobileMenu}>
+              <button
+                className='rounded-pill align-self-center'
+                onClick={handleContact}>
+                <Link to='/ ' className='nav-links' onClick={closeMobileMenu}>
                   Contact Us
                 </Link>
               </button>
+              {showcontact && 
+                <Contact closeContact={closeContact}/>
+              }
             </ul>
           </div>
         </nav>

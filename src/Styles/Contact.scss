@@ -1,15 +1,25 @@
+$background: linear-gradient(178deg, #210045, #0C0123);
 .contact{
     position: absolute;
-    width: 100%;
+    z-index: 104;
+    width: 50%;
     height: 100vh;
+    text-align: left!important;
+    background-image: $background;
     font-family: 'Roboto', sans-serif!important;
+    right: 0;
     //color: white;
-    h4 {
+    h3 {
         font-size: 20px;
+        color: white;
     }  
+    label {
+        color: white;
+        margin-bottom: 0.25rem;
+    }
     input{
         border: none;
-        padding: 1rem 0.75rem;
+        padding: 0.8rem 0.5rem;
         border-radius: 8px;
         margin-bottom: 1rem;
         padding-left: 1rem;
@@ -24,11 +34,23 @@
     }
     textarea{
         border-radius: 8px;
+        height: 200px;
     }
     button{
         background-color: #271AC1;
         border: none;
-        border-radius: 10px;
+        border-radius: 50px;
+        left: -20px;
+    }
+    @media screen and (max-width: 768px) {
+        height: 75vh;
+        width: 75%;
+        textarea {
+            height: 150px;
+        }
+        input {
+            padding: 0.5rem 0.25rem;
+        }
     }
   }
   

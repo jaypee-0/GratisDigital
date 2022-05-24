@@ -1,28 +1,36 @@
-import React from 'react'
-import "../Styles/Contact.scss"
-import { Link } from 'react-router-dom'
+import React from 'react';
+import '../Styles/Contact.scss';
 import { FontAwesomeIcon as FA } from '@fortawesome/react-fontawesome';
 
-const Contact = () => {
+const Contact = ({ closeContact }) => {
   return (
-      <div className="contact container">
-      <div className="d-flex flex-column col-6">
-        <Link to="/"><button className='rounded-pill bg-light'><FA icon='fa-arrow-left-long'/></button></Link>
-        <h4 className='text-center'>Hey, we are still in the works,<br /> but you can send us a message!</h4>
+    <div className='contact container px-3 py-3'>
+      <div className='d-flex flex-column'>
+        <button
+          className='position-absolute py-2 rounded-pill bg-light'
+          onClick={closeContact}>
+          <FA icon='fa-arrow-right-long' />
+        </button>
+        <h3 className='text-center mb-4'>
+          Hey, we are still in the works,
+          <br /> but you can send us a message!
+        </h3>
         <form className='d-flex flex-column'>
           <label>First name</label>
-          <input type="text" placeholder="Enter your First name" />
+          <input type='text' placeholder='Enter your First name' />
           <label>Last name</label>
-          <input type="text" placeholder="Enter your Last name" />
+          <input type='text' placeholder='Enter your Last name' />
           <label>Email address</label>
-          <input type="text" placeholder="Enter your Email Address" />
+          <input type='text' placeholder='Enter your Email Address' />
           <label>Tell us what you need help with:</label>
-          <textarea cols="30" rows="10" className='px-3 py-3'></textarea>
-          <button className='my-3 me-auto py-2 px-3 text-light'>SEND NOW</button>          
+          <textarea className='px-2 py-2'></textarea>
+          <button className='my-3 me-auto  py-2 px-3 text-light'>
+            SEND NOW
+          </button>
         </form>
       </div>
-      </div>
+    </div>
   );
-}
+};
 
-export default Contact
+export default Contact;

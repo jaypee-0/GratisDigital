@@ -6,7 +6,6 @@ import ComingSoon from './Routes/ComingSoon';
 import AboutUs from './Routes/AboutUs';
 import Blog from './Routes/Blog';
 import Github from './Routes/Github';
-import Contact from './Routes/Contact';
 
 function App() {  
   return (
@@ -17,8 +16,6 @@ function App() {
         <Route exact path='/about' element={<AboutUs />}></Route>
         <Route exact path='/blog' element={<Blog />}></Route>
         <Route exact path='/github' element={<Github />}></Route>
-        <Route exact path='/contact' element={<Contact />}></Route>
-
       </Routes>
     </Router>
   );
