@@ -35,10 +35,10 @@ const Blog = () => {
                 </div>
             </div> 
             {/* Blogs */}
-            <div className="blogs d-flex flex-wrap my-5">
+            <div className="blogs d-flex justify-content-between  flex-wrap my-5">
                 {blogs && blogs.map(data => {
                 return (                
-                    <div key={data.id} className="col-6 py-2 col-lg-4 mb-3 carding border px-3">
+                    <div key={data.id} className="col-6 py-2 col-lg-42 mb-3 carding border px-3">
                         <img className='img-fluid mb-2 w-100' src={data.img} alt="" />
                         <div className='d-flex flex-column'>
                             <h5>{data.dateTitle}</h5>
