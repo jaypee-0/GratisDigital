@@ -27,5 +27,5 @@ Using the github api, display the following via '/github route':
 - [React](https://reactjs.org/)
 - [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 - [SCSS](https://sass-lang.com/documentation)
-- [GithubAPI] (https://docs.github.com/en/rest)
-- [MaterialUI] (https://mui.com/)
+- [GithubAPI](https://docs.github.com/en/rest)
+- [MaterialUI](https://mui.com/)
